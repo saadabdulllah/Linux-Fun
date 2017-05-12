@@ -1,7 +1,7 @@
 # Linux-Fun
 
 ## Search for packages in the repository 
-apt-cache shearch bluefinsh*
+apt-cache search bluefinsh*
 
 ## look for the package that already installed or not 
 apt-cache policy bluefish
@@ -53,7 +53,42 @@ $ mv ./mydir/file.txt ./anotherdir
 ## switch user
 $ su
 
-ll
+## Remove a program 
+$ sudo apt-et install remove 
+
+----
+
+# Find Commad uses 
+
+## To find all file in a same extention using find command 
+find is case sensative
+    find [directory][-type][f for file][-name] ["" and what to look for]
+$ find . -type f -name "*.java" 
+
+to ignote case sensitive use [-iname] insate of [-name]
+
+$ find . -type f -iname "file*"
+
+## find files with certain permission 
+$ find . -type f -perm 0664
+
+## find with file size 
+$ find . -size +1m
+
+
+## find file  with not operator, find file that are not .php
+$ find . -type f -not -iname "*.php"
+
+
+
+
+
+
+
+
+
+
+
 
 
 
